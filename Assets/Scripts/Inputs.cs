@@ -16,38 +16,22 @@ public class Inputs : MonoBehaviour
     {   
         if(Input.GetKeyDown(KeyCode.A))
         {
-            animatorComponent.SetBool("Anim1", true);
-
-            animatorComponent.SetBool("Anim2", false);
-            animatorComponent.SetBool("Anim3", false);
-            animatorComponent.SetBool("Anim4", false);
+            animatorComponent.Play("Base Layer.sombra_taunt_Dorin");
         }
 
         if(Input.GetKeyDown(KeyCode.S))
         {
-            animatorComponent.SetBool("Anim2", true);
-
-            animatorComponent.SetBool("Anim1", false);
-            animatorComponent.SetBool("Anim3", false);
-            animatorComponent.SetBool("Anim4", false);
+            animatorComponent.Play("Base Layer.Photoframe");
         }
 
         if(Input.GetKeyDown(KeyCode.D))
         {
-            animatorComponent.SetBool("Anim3", true);
-
-            animatorComponent.SetBool("Anim2", false);
-            animatorComponent.SetBool("Anim1", false);
-            animatorComponent.SetBool("Anim4", false);
+            animatorComponent.Play("Base Layer.ArmatureAction");
         }
 
         if(Input.GetKeyDown(KeyCode.F))
         {
-            animatorComponent.SetBool("Anim4", true);
-
-            animatorComponent.SetBool("Anim2", false);
-            animatorComponent.SetBool("Anim3", false);
-            animatorComponent.SetBool("Anim1", false);
+            animatorComponent.Play("Base Layer.combo");
         }
     }
 }
